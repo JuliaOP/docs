@@ -56,7 +56,21 @@ We recommend that you use this method for complete project generation too, as we
 
 You can see a simple but well working example of generator [here](https://github.com/pwc-code-generator/pwc-generator-laravel55) (it generates a complete Laravel project using PWC and the tools it offers).
 
-### 5. Be creative and make something amazing!! :D
+### 5. Implement the default field types
+
+To be sure that any project will run with your generator, we recommend that you add support for these field types: ```string```, ```text```, ```integer```, ```decimal```, ```boolean```, ```date```, ```datetime```, ```timestamp```, ```time```, ```enum```, ```file```, ```image```.
+
+**NOTE:** The ```enum``` is a little different from other types because each enum can have multiple items. You can use the getItems() method on the field to get these items.
+
+### 6. Implement the default element types
+
+We higly recomment that you implement these visual elements on your generator: ```text```, ```textarea```, ```number```, ```checkbox```, ```date```, ```datetime```, ```select```, ```file```.
+
+And, for the relationships, we recommend that you implement: ```select``` for "Belongs To Relationships" and ```simple-datagrid``` for "Has Many Relationships".
+
+Implementing these elements will make your generator compatible with most of the projects. Of course, you are free to add your own elements and make your generator better. 
+
+### 7. Be creative and make something amazing!! :D
 
 It's only it. You can write the remaining code as you want. PWC will offer some tools to help you with code generation, it is called *Smart Project Object*. See it below.
 
